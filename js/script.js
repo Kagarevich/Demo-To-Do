@@ -11,11 +11,21 @@ function whenLoaded() {
     const newTodo = input.value;
     textSpan.append(newTodo);
 
+    /*const acceptBtn = document.createElement("span");
+    acceptBtn.classList.add("todo-accept");
+    const iconAccept = document.createElement("i");
+    iconAccept.classList.add("fas", "fa-trash-alt");
+    acceptBtn.appendChild(iconAccept);*/
+
     const deleteBtn = document.createElement("span");
     deleteBtn.classList.add("todo-trash");
     const icon = document.createElement("i");
     icon.classList.add("fas", "fa-trash-alt");
     deleteBtn.appendChild(icon);
+
+    /*ul.appendChild(li).append(textSpan, acceptBtn);
+    input.value = "";
+    listenAcceptTodo(acceptBtn);*/
 
     ul.appendChild(li).append(textSpan, deleteBtn);
     input.value = "";
@@ -30,6 +40,8 @@ function whenLoaded() {
 
   function listenAcceptTodo(element) {
     element.addEventListener("click", (event) => {
+      /*element.parentElement.remove();
+      event.stopPropagation();*/
     });
   }
 
@@ -45,7 +57,12 @@ function whenLoaded() {
     if (data) {
       ul.innerHTML = data;
     }
-
+/*
+    const acceptButtons = document.querySelectorAll("span.todo-accept");
+    for (const button of acceptButtons) {
+      listenAcceptTodo(button);
+    }
+*/
     const deleteButtons = document.querySelectorAll("span.todo-trash");
     for (const button of deleteButtons) {
       listenDeleteTodo(button);
@@ -53,12 +70,11 @@ function whenLoaded() {
   }
 
   input.addEventListener("keypress", (keyPressed) => {
-    const keyEnter = 13;
+    const keyEnter = 13; /*Клавиша Enter*/
     if (keyPressed.which == keyEnter) {
       createTodo();
     }
   });
-
   ul.addEventListener("click", onClickTodo);
 
   clearButton.addEventListener("click", () => {

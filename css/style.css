@@ -1,6 +1,5 @@
 html {
-  /*background-color: whitesmoke;*/
-  min-height: 100%;
+  background-color: whitesmoke;
 }
 
 header {
@@ -13,8 +12,6 @@ header {
 }
 
 body {
-  min-height: 100%;
-  height: 100%; /*Попытка*/
   margin: 0 auto;
   width: 1219px;
   padding-right: 55px;
@@ -94,8 +91,8 @@ h4 {
 
 .TheSolution {
   background: #eeeeee;
-  /*height: 1000px;*/
-  /*top: 487px;*/
+  height: 1000px;
+  top: 487px;
   padding-top: 48px;
 }
 
@@ -122,7 +119,7 @@ input {
   font-size: 20px;
   font-weight: 0.5px;
   padding-left: 25px;
-  border: 3px solid black;
+  border: 3px solid gray;
   color: gray;
 }
 
@@ -176,6 +173,7 @@ button:hover {
 
 #todo {
   margin: 0 auto;
+  box-shadow: 0 0 1em black;
   max-width: 600px;
   background: white;
   height: 70%;
@@ -211,9 +209,67 @@ li.checked {
 
 .fa-trash-alt {
   color: black;
-  background: url(../img/iconfinder_cancel_48_10277.ico);
 }
 
-.myFas {
-  background: url(../img/iconfinder_cancel_48_10277.ico);
+/*--------TEAM------------*/
+.people {
+  /*padding-top: 48px;*/
+  color: whitesmoke;
+  text-align: center;
+  background-color: rgb(11, 24, 212);
+}
+
+.container {
+  background: #eee;
+  padding-top: 48px;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.member {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  flex-basis: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.member > img {
+  height: 200px;
+  width: 200px;
+}
+
+.member-name {
+  margin: 0;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(11, 24, 212);
+}
+
+.member-role {
+  font-style: italic;
+  font-size: 18px;
+}
+
+footer {
+  height: 176px;
+  background: #333333;
+}
+
+.footerText {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 48px;
+  width: 540px;
+  height: 64px;
+  padding-left: 340px;
 }

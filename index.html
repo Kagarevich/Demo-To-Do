@@ -1,8 +1,7 @@
 <html>
   <head>
-    <title>Test To-Do List</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приложение To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -11,51 +10,20 @@
       crossorigin="anonymous"
     />
   </head>
-  <header>
-    <div class="shapka">
-      <div class="bezKartinki">
-        <div class="otstup">
-          <a class="Ssilki" href="#Task">Задача |</a>
-          <a class="Ssilki" href="#Solution">Решение |</a>
-          <a class="Ssilki" href="#Container">Команда разработки</a>
-        </div>
-      </div>
-    </div>
-  </header>
   <body>
-    <div class="Name">
-      <div><h1>To-Do List</h1></div>
-    </div>
-    <div class="TheTask" id="Task">
-      <div class="Task"><h1>Задача</h1></div>
-      <div class="text2 text">
-        <ol>
-          <li>
-            Сделать todo-лист, добавить возможность создать, выполнить, удалить
-            todo'шку и чтобы было красиво :)
-          </li>
-          <br />
-          <li>
-            Запрещено: jquery, bootstrap и так далее. <br />Будет полезно:
-            localStorage, youtube?
-          </li>
-          <br />
-          <li>
-            Загрузить выполнению работу в гит репозеторий или скинуть архив<br />
-            Работа должна быть выполнена не позже конца воскресения
-          </li>
-        </ol>
-      </div>
-    </div>
-    <div class="TheSolution" id="Solution">
-      <div class="Solution">
-        <h1>Решение</h1>
-      </div>
-    </div>
     <div id="todo">
-      <h1 class="hTodo">To-Do List</h1>
-      <input type="text" placeholder="Add To-Do to the list" />
-      <ul class="todos"></ul>
+      <h1>To-Do List</h1>
+      <input type="text" placeholder="Add New To-Do" />
+      <ul class="todos">
+        <li>
+          <span class="todo-text">Вымыть кухню</span
+          ><span class="todo-trash"><i class="fas fa-trash-alt"></i></span>
+        </li>
+        <li>
+          <span class="todo-text">Пойти в театр</span
+          ><span class="todo-trash"><i class="fas fa-trash-alt"></i></span>
+        </li>
+      </ul>
       <div id="buttons">
         <button class="clear">Clear</button>
       </div>
@@ -63,3 +31,4 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+

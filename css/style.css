@@ -1,15 +1,5 @@
 html {
-  /*background-color: whitesmoke;*/
   min-height: 100%;
-}
-
-header {
-  position: fixed;
-  background-color: rgb(11, 24, 212);
-  height: 84px;
-  width: 1109px;
-  padding-right: 55px;
-  padding-left: 55px;
 }
 
 body {
@@ -23,95 +13,14 @@ body {
   background: #ffffff;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-size: 75px;
-  text-align: center;
-}
-
-.shapka {
-  height: 84px;
-}
-
-.bezKartinki {
-  text-align: right;
-}
-
-.otstup {
-  margin-top: 25px;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.text1 {
-  text-align: right;
-  font-size: 32px;
-  line-height: 37px;
-}
-
-.text {
-  font-size: 32px;
-  line-height: 37px;
-}
-
-.Ssilki {
-  color: whitesmoke;
-  text-decoration: none;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-.Name {
-  padding-top: 84px;
-  height: 403px;
-  background: url("../img/4.png");
-  background-size: cover;
-  background-position-x: center;
-}
-
-.Name > div {
-  margin-top: 12%;
-  color: whitesmoke;
-}
-
-.TheTask {
-  background: #eeeeee;
-  height: 719px;
-  top: 487px;
-}
-
-.Task {
-  color: rgb(11, 24, 212);
-  padding-top: 48px;
-}
-
-.text2 {
-  padding-bottom: 92px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.TheSolution {
-  background: #eeeeee;
-  /*height: 1000px;*/
-  /*top: 487px;*/
-  padding-top: 48px;
-}
-
-.Solution {
-  background-color: rgb(11, 24, 212);
-  height: 84px;
-}
-
-.Solution > h1 {
-  color: whitesmoke;
-}
-
-/*------------TODO------------*/
-.hTodo {
+h1 {
+  text-transform: uppercase;
   background: rgb(11, 24, 212);
   color: white;
+  margin: 0;
+  padding: 10px 28px;
+  font-weight: normal;
+  text-align: center;
 }
 
 input {
@@ -122,32 +31,24 @@ input {
   font-size: 20px;
   font-weight: 0.5px;
   padding-left: 25px;
-  border: 3px solid black;
+  border: 3px solid gray;
   color: gray;
 }
 
 input:focus {
   background: #edf1f5;
-  border: 3px solid #86a8e7;
+  border: 3px solid rgb(11, 24, 212);
   outline: none;
-  color: black;
+  color: rgb(11, 24, 212);
 }
 
 span.todo-trash {
   margin-right: 10px;
   text-align: center;
   height: 50px;
-  width: 50px;
-  margin-left: 5px;
-}
-
-span.todo-accept {
-  margin-right: 10px;
-  text-align: center;
-  height: 50px;
-  width: 50px;
-  margin-left: 5px;
-  transition: 0.1s ease-in;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s linear;
 }
 
 button {
@@ -176,9 +77,10 @@ button:hover {
 
 #todo {
   margin: 0 auto;
+  box-shadow: 0 0 1em black;
   max-width: 600px;
+  height: 100%;
   background: white;
-  height: 70%;
 }
 
 .todos {
@@ -201,19 +103,9 @@ button:hover {
 }
 
 .checked {
-  color: rgb(18, 197, 12);
+  color: gray;
   text-decoration: line-through;
 }
-
 li.checked {
   background-color: green;
-}
-
-.fa-trash-alt {
-  color: black;
-  background: url(../img/iconfinder_cancel_48_10277.ico);
-}
-
-.myFas {
-  background: url(../img/iconfinder_cancel_48_10277.ico);
 }
